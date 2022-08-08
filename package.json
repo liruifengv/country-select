@@ -10,12 +10,6 @@
     "lint": "eslint --ext .js --ext .jsx src --fix",
     "style": "stylelint \"src/**/*.(scss|css)\" --fix"
   },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --fix"
-    ],
-    "*.css": "stylelint --fix --allow-empty-input"
-  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -35,6 +29,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.3.2",
     "stylelint": "^14.9.1",
     "stylelint-config-css-modules": "^4.1.0",
@@ -43,5 +38,11 @@
     "stylelint-config-standard": "^26.0.0",
     "stylelint-order": "^4.1.0",
     "vite": "^3.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix"
+    ],
+    "*.css": "stylelint --fix --allow-empty-input"
   }
 }
