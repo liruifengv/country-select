@@ -4,6 +4,7 @@ import './App.css'
 function App() {
   const showModal = () => {
     console.log('showModal')
+    console.log('showModal')
   }
 
   return (
