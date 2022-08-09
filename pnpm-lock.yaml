@@ -16,6 +16,7 @@ specifiers:
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-react: ^7.28.0
   eslint-plugin-react-hooks: ^4.3.0
+  flag-icons: ^6.6.4
   husky: ^8.0.1
   lint-staged: ^13.0.3
   prettier: ^2.3.2
@@ -34,6 +35,8 @@ specifiers:
 dependencies:
   antd-mobile: 5.20.0_biqbaboplfbrettd7655fr4n2y
   antd-mobile-icons: 0.3.0
+  country-json: 1.1.2
+  flag-icons: 6.6.4
   promise-modal: 1.1.0_v2m5e27vhdewzwhryxwfaorcca
   prop-types: 15.8.1
   react: 18.2.0
@@ -1543,6 +1546,10 @@ packages:
       yaml: 1.10.2
     dev: true
 
+  /country-json/1.1.2:
+    resolution: {integrity: sha512-LLeN2f0/VuTUNBO3VyccJ319PJMNCf+tSbvQnmHkTZpG4yP9WMj82Y9Uj4m9+SVr1lb/jc7XL+fX12Cdr63XjQ==}
+    dev: false
+
   /create-require/1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
     dev: true
@@ -2540,6 +2547,10 @@ packages:
       locate-path: 6.0.0
       path-exists: 4.0.0
     dev: true
+
+  /flag-icons/6.6.4:
+    resolution: {integrity: sha512-hRRXKw3f5F2OCcDTOTXO0tc3ODqBx/ttA61V9mqy/hVbnFXzW+7tJMLQ+xd77+BXwdUzQAMLW2G4RZqqvaN3Mg==}
+    dev: false
 
   /flat-cache/2.0.1:
     resolution: {integrity: sha512-LoQe6yDuUMDzQAEH8sgmh4Md6oZnc/7PjtwjNFSzveXqSHt6ka9fPBuso7IGf9Rz4uqnSnWiFH2B/zj24a5ReA==}

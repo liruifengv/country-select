@@ -32,3 +32,35 @@
   color: #9c9c9c;
   font-size: 18px;
 }
+
+.list {
+  height: 77vh;
+  margin-top: 40px;
+  overflow-y: auto;
+}
+
+.country-item {
+  display:flex;
+  align-items: center;
+  height: 50px
+}
+
+.country-name {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  height: 100%;
+  margin-left: 15px;
+  overflow: hidden;
+  color: #2C2C2C;
+  font-weight: 400;
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #F0F0F0
+}
+
+.flag-icon {
+  width: 30px;
+  height: 25px;
+}
