@@ -10,8 +10,9 @@ import '/node_modules/flag-icons/css/flag-icons.min.css'
 
 function CountrySelect(props) {
   const [visible, setVisible] = useState(false)
+  const [searchVal, setSearchVal] = useState('')
   const { callbackResolve } = props
-  const { countrys } = useCountrys()
+  const { countrys } = useCountrys(searchVal)
 
   useEffect(() => {
     setVisible(true)
@@ -22,8 +23,8 @@ function CountrySelect(props) {
     callbackResolve('close')
   }
 
-  const handleChange = e => {
-    console.log('handleChange', e)
+  const handleChange = value => {
+    setSearchVal(value)
   }
 
   return (

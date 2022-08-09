@@ -1,12 +1,21 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import countrys from './countrys.json'
 
-export const useCountrys = () => {
-  useEffect(() => {
-    console.log('countrys:', countrys)
-  }, [])
+export const useCountrys = searchVal => {
+  const [result, setResult] = useState([])
 
-  return { countrys }
+  useEffect(() => {
+    if (!searchVal) {
+      setResult(countrys)
+      return
+    }
+    const res = countrys.filter(item =>
+      item.country.toLowerCase().includes(searchVal.toLowerCase()),
+    )
+    setResult(res)
+  }, [searchVal])
+
+  return { countrys: result }
 }
 
 export default useCountrys
