@@ -1,0 +1,34 @@
+.contaniner {
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  max-width: 768px;
+  min-height: 40vh;
+  margin: 0 auto;
+  padding: 24px 20px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.title {
+  flex: 1;
+  overflow: hidden;
+  color: #2C2C2C;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+.close {
+  color: #9c9c9c;
+  font-size: 18px;
+}

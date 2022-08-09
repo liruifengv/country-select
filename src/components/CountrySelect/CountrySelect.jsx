@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Popup } from 'antd-mobile'
+import { CloseOutline, SearchOutline } from 'antd-mobile-icons'
 import PropTypes from 'prop-types'
+import style from './CountrySelect.module.css'
+import BaseInput from '../BaseInput/BaseInput'
 
 function CountrySelect(props) {
   const [visible, setVisible] = useState(false)
@@ -16,23 +19,22 @@ function CountrySelect(props) {
     callbackResolve('close')
   }
 
+  const handleChange = e => {
+    console.log('handleChange', e)
+  }
+
   return (
-    <Popup
-      visible={visible}
-      bodyStyle={{
-        borderTopLeftRadius: '10px',
-        borderTopRightRadius: '10px',
-        minHeight: '40vh',
-        maxWidth: '768px',
-        margin: '0 auto',
-        left: '0',
-        right: '0',
-      }}
-      showCloseButton
-      onClose={handleClose}
-      destroyOnClose
-    >
-      CountrySelect
+    <Popup visible={visible} bodyClassName={style.contaniner} destroyOnClose>
+      <div className={style.header}>
+        <div className={style.title}>Choose a country or region</div>
+        <CloseOutline className={style.close} onClick={handleClose} />
+      </div>
+      <BaseInput
+        placeholder="Search a country"
+        allowClear
+        prefix={<SearchOutline />}
+        onChange={handleChange}
+      />
     </Popup>
   )
 }
