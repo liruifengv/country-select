@@ -43,14 +43,12 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   border: 1px solid transparent;
+  border-color: #646cff;
   border-radius: 8px;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
-button:hover {
-  border-color: #646cff;
-}
 
 button:focus,
 button:focus-visible {
