@@ -31,6 +31,7 @@
 .close {
   color: #9c9c9c;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .list {
