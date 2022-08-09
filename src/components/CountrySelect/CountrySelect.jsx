@@ -20,10 +20,13 @@ function CountrySelect(props) {
     <Popup
       visible={visible}
       bodyStyle={{
-        borderTopLeftRadius: '8px',
-        borderTopRightRadius: '8px',
+        borderTopLeftRadius: '10px',
+        borderTopRightRadius: '10px',
         minHeight: '40vh',
-        maxWidth: '800px',
+        maxWidth: '768px',
+        margin: '0 auto',
+        left: '0',
+        right: '0',
       }}
       showCloseButton
       onClose={handleClose}
