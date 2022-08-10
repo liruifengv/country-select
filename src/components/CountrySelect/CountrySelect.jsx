@@ -47,7 +47,7 @@ function CountrySelect(props) {
         prefix={<SearchOutline />}
         onChange={handleChange}
       />
-      <CountryList data={countries} height={600} onSelect={handleSelect} />
+      <CountryList data={countries} height={500} onSelect={handleSelect} />
     </Popup>
   )
 }
