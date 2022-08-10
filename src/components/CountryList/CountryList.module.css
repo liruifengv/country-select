@@ -1,0 +1,30 @@
+.list {
+  margin-top: 40px;
+}
+
+.country-item {
+  display:flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.country-name {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  height: 100%;
+  margin-left: 15px;
+  overflow: hidden;
+  color: #2C2C2C;
+  font-weight: 400;
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #F0F0F0
+}
+
+.flag-icon {
+  width: 30px;
+  height: 25px;
+}
