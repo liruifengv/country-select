@@ -15,7 +15,7 @@ function CountryList(props) {
     })
   }
 
-  return (
+  return data.length > 0 ? (
     <List data={data} height={height} itemHeight={50} itemKey="country" className={style.list}>
       {item => (
         <div
@@ -29,6 +29,8 @@ function CountryList(props) {
         </div>
       )}
     </List>
+  ) : (
+    <div className={style.empty}>No result</div>
   )
 }
 
