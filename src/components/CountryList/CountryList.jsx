@@ -6,11 +6,24 @@ import style from './CountryList.module.css'
 import '/node_modules/flag-icons/css/flag-icons.min.css'
 
 function CountryList(props) {
-  const { data, height } = props
+  const { data, height, onSelect } = props
+
+  const handleSelect = item => {
+    onSelect({
+      name: item.country,
+      code: item.abbreviation,
+    })
+  }
+
   return (
     <List data={data} height={height} itemHeight={50} itemKey="country" className={style.list}>
       {item => (
-        <div className={style['country-item']} key={item.country}>
+        <div
+          className={style['country-item']}
+          key={item.country}
+          aria-hidden="true"
+          onClick={() => handleSelect(item)}
+        >
           <i className={`${style['flag-icon']} fib fi-${item.abbreviation.toLowerCase()}`} />
           <div className={style['country-name']}>{item.country}</div>
         </div>
@@ -22,10 +35,12 @@ function CountryList(props) {
 CountryList.propTypes = {
   data: PropTypes.array,
   height: PropTypes.number.isRequired,
+  onSelect: PropTypes.func,
 }
 
 CountryList.defaultProps = {
   data: [],
+  onSelect: undefined,
 }
 
 export default CountryList
