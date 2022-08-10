@@ -17,6 +17,7 @@
     "flag-icons": "^6.6.4",
     "promise-modal": "^1.1.0",
     "prop-types": "^15.8.1",
+    "rc-virtual-list": "^3.4.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

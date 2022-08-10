@@ -38,13 +38,14 @@
 .list {
   height: 60vh;
   margin-top: 40px;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .country-item {
   display:flex;
   align-items: center;
-  height: 50px
+  box-sizing: border-box;
+  height: 50px;
 }
 
 .country-name {

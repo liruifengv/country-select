@@ -22,6 +22,7 @@ specifiers:
   prettier: ^2.3.2
   promise-modal: ^1.1.0
   prop-types: ^15.8.1
+  rc-virtual-list: ^3.4.8
   react: ^18.2.0
   react-dom: ^18.2.0
   stylelint: ^14.9.1
@@ -35,10 +36,10 @@ specifiers:
 dependencies:
   antd-mobile: 5.20.0_biqbaboplfbrettd7655fr4n2y
   antd-mobile-icons: 0.3.0
-  country-json: 1.1.2
   flag-icons: 6.6.4
   promise-modal: 1.1.0_v2m5e27vhdewzwhryxwfaorcca
   prop-types: 15.8.1
+  rc-virtual-list: 3.4.8_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -1545,10 +1546,6 @@ packages:
       path-type: 4.0.0
       yaml: 1.10.2
     dev: true
-
-  /country-json/1.1.2:
-    resolution: {integrity: sha512-LLeN2f0/VuTUNBO3VyccJ319PJMNCf+tSbvQnmHkTZpG4yP9WMj82Y9Uj4m9+SVr1lb/jc7XL+fX12Cdr63XjQ==}
-    dev: false
 
   /create-require/1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
@@ -4436,6 +4433,20 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
+  /rc-resize-observer/1.2.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-6W+UzT3PyDM0wVCEHfoW3qTHPTvbdSgiA43buiy8PzmeMnfgnDeb9NjdimMXMl3/TcrvvWl5RRVdp+NqcR47pQ==}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': 7.18.9
+      classnames: 2.3.1
+      rc-util: 5.23.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      resize-observer-polyfill: 1.5.1
+    dev: false
+
   /rc-util/5.23.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-lgm6diJ/pLgyfoZY59Vz7sW4mSoQCgozqbBye9IJ7/mb5w5h4T7h+i2JpXAx/UBQxscBZe68q0sP7EW+qfkKUg==}
     peerDependencies:
@@ -4447,6 +4458,20 @@ packages:
       react-dom: 18.2.0_react@18.2.0
       react-is: 16.13.1
       shallowequal: 1.1.0
+    dev: false
+
+  /rc-virtual-list/3.4.8_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-qSN+Rv4i/E7RCTvTMr1uZo7f3crJJg/5DekoCagydo9zsXrxj07zsFSxqizqW+ldGA16lwa8So/bIbV9Ofjddg==}
+    engines: {node: '>=8.x'}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      classnames: 2.3.1
+      rc-resize-observer: 1.2.0_biqbaboplfbrettd7655fr4n2y
+      rc-util: 5.23.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react-dom/18.2.0_react@18.2.0:
