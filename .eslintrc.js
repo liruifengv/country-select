@@ -14,5 +14,6 @@ module.exports = {
   plugins: ['react', 'prettier'],
   rules: {
     'prettier/prettier': 'error',
+    'react/forbid-prop-types': 'off',
   },
 }
