@@ -28,6 +28,13 @@ function CountrySelect(props) {
     setSearchVal(value)
   }
 
+  const handleSelect = value => {
+    setVisible(false)
+    callbackResolve({
+      country: value,
+    })
+  }
+
   return (
     <Popup visible={visible} bodyClassName={style.contaniner} destroyOnClose>
       <div className={style.header}>
@@ -40,7 +47,7 @@ function CountrySelect(props) {
         prefix={<SearchOutline />}
         onChange={handleChange}
       />
-      <CountryList data={countries} height={600} />
+      <CountryList data={countries} height={600} onSelect={handleSelect} />
     </Popup>
   )
 }
