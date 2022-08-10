@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import { Button } from 'antd-mobile'
 import { useCountrySelect } from './components'
 
 function App() {
+  const [country, setCountry] = useState('')
   const showCountrySelect = useCountrySelect()
 
   const handleSelectCountry = async () => {
     const res = await showCountrySelect()
-    console.log('res', res)
+    if (res && res.country) {
+      setCountry(res.country)
+    }
   }
 
   return (
@@ -20,6 +23,7 @@ function App() {
           Seclect country
         </Button>
       </div>
+      <h2>Your selected country is {country.name}</h2>
     </div>
   )
 }
