@@ -4,7 +4,7 @@ import { CloseOutline, SearchOutline } from 'antd-mobile-icons'
 import PropTypes from 'prop-types'
 import style from './CountrySelect.module.css'
 import BaseInput from '../BaseInput/BaseInput'
-import { useCountrys } from './hooks/useCountrys'
+import { useCountries } from './hooks/useCountries'
 // eslint-disable-next-line import/no-unresolved, import/no-absolute-path
 import '/node_modules/flag-icons/css/flag-icons.min.css'
 
@@ -12,7 +12,7 @@ function CountrySelect(props) {
   const [visible, setVisible] = useState(false)
   const [searchVal, setSearchVal] = useState('')
   const { callbackResolve } = props
-  const { countrys } = useCountrys(searchVal)
+  const { countries } = useCountries(searchVal)
 
   useEffect(() => {
     setVisible(true)
@@ -40,7 +40,7 @@ function CountrySelect(props) {
         onChange={handleChange}
       />
       <div className={style.list}>
-        {countrys.map(item => (
+        {countries.map(item => (
           <div className={style['country-item']} key={item.country}>
             <i className={`${style['flag-icon']} fib fi-${item.abbreviation.toLowerCase()}`} />
             <div className={style['country-name']}>{item.country}</div>
