@@ -10,7 +10,7 @@ export const useCountries = searchVal => {
       return
     }
     const res = countries.filter(item =>
-      item.country.toLowerCase().includes(searchVal.toLowerCase()),
+      item.country.toLowerCase().includes(searchVal.trim().toLowerCase()),
     )
     setResult(res)
   }, [searchVal])
