@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Popup } from 'antd-mobile'
 import { CloseOutline, SearchOutline } from 'antd-mobile-icons'
 import PropTypes from 'prop-types'
-import List from 'rc-virtual-list'
 import style from './CountrySelect.module.css'
 import BaseInput from '../BaseInput/BaseInput'
+import CountryList from '../CountryList/CountryList'
 import { useCountries } from './hooks/useCountries'
 // eslint-disable-next-line import/no-unresolved, import/no-absolute-path
 import '/node_modules/flag-icons/css/flag-icons.min.css'
@@ -40,14 +40,7 @@ function CountrySelect(props) {
         prefix={<SearchOutline />}
         onChange={handleChange}
       />
-      <List data={countries} height={500} itemHeight={50} itemKey="country" className={style.list}>
-        {item => (
-          <div className={style['country-item']} key={item.country}>
-            <i className={`${style['flag-icon']} fib fi-${item.abbreviation.toLowerCase()}`} />
-            <div className={style['country-name']}>{item.country}</div>
-          </div>
-        )}
-      </List>
+      <CountryList data={countries} height={600} />
     </Popup>
   )
 }
