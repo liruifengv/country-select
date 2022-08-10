@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Button } from 'antd-mobile'
-import { useCountrySelect } from './components/CountrySelect'
+import { useCountrySelect } from './components'
 
 function App() {
   const showCountrySelect = useCountrySelect()
