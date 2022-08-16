@@ -20,7 +20,6 @@ specifiers:
   husky: ^8.0.1
   lint-staged: ^13.0.3
   prettier: ^2.3.2
-  promise-modal: ^1.1.0
   prop-types: ^15.8.1
   rc-virtual-list: ^3.4.8
   react: ^18.2.0
@@ -37,7 +36,6 @@ dependencies:
   antd-mobile: 5.20.0_biqbaboplfbrettd7655fr4n2y
   antd-mobile-icons: 0.3.0
   flag-icons: 6.6.4
-  promise-modal: 1.1.0_v2m5e27vhdewzwhryxwfaorcca
   prop-types: 15.8.1
   rc-virtual-list: 3.4.8_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
@@ -4375,18 +4373,6 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
-
-  /promise-modal/1.1.0_v2m5e27vhdewzwhryxwfaorcca:
-    resolution: {integrity: sha512-H+gbMkTweDybXcwjaGJvyDaO5BZnEVmYGQTWLE8JIeC9wvhsdrvMRcJgGlmsKcnTzHouKRsA6yTxEDlaiOAaXg==}
-    peerDependencies:
-      prop-types: ^15.8.1
-      react: ^18.2.0
-      react-dom: ^18.2.0
-    dependencies:
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-    dev: false
 
   /prop-types/15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
