@@ -11,10 +11,10 @@ import countries from './countries.json'
 /**
  * filter countries
  * @param {string} keyword
- * @returns
+ * @returns {Array<{country: String, abbreviation: String}>}
  */
 function filterCountries(keyword) {
-  return countries.filter(it => it.country.toLowerCase().includes(keyword.toLowerCase()))
+  return countries.filter(it => it.country.toLowerCase().includes(keyword.trim().toLowerCase()))
 }
 
 function CountrySelect({ visible, onClose, onSelect }) {
