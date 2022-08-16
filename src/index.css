@@ -31,6 +31,8 @@ body {
   min-height: 100vh;
   margin: 0;
   place-items: center;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: Raleway;
 }
 
 h1 {

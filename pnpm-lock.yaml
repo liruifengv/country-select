@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.0.3
   '@commitlint/config-conventional': ^17.0.3
+  '@fontsource/raleway': ^4.5.10
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.0
@@ -33,6 +34,7 @@ specifiers:
   vite: ^3.0.0
 
 dependencies:
+  '@fontsource/raleway': 4.5.10
   antd-mobile: 5.20.0_biqbaboplfbrettd7655fr4n2y
   antd-mobile-icons: 0.3.0
   flag-icons: 6.6.4
@@ -561,6 +563,10 @@ packages:
     resolution: {integrity: sha512-419BMceRLq0RrmTSDxn8hf9R3VCJv2K9PUfugh5JyEFmdjzDo+e8U5EdR8nzKq8Yj1htzLm3b6eQEEam3/rrtg==}
     dependencies:
       '@floating-ui/core': 0.7.3
+    dev: false
+
+  /@fontsource/raleway/4.5.10:
+    resolution: {integrity: sha512-G5ykrg9cK/i5wSLD0cFkmK9Phoo803VQqwsbWePU1IULFkZWxOe4L9L6cPwbcS392RNBjCj3UE6nBt4QvwQ/Vg==}
     dev: false
 
   /@humanwhocodes/config-array/0.10.4:
